@@ -1,6 +1,6 @@
 """
 project_1.py: 1st project for ENGETO online academy
-Autohor: Dominika Kubová
+Author: Dominika Kubová
 email: dominika.kubova@gmail.com   
 Discord: dominika_50263
 """
