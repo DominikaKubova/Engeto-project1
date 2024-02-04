@@ -1,3 +1,5 @@
+import sys
+
 """
 project_1.py: 1st project for ENGETO online academy
 Author: Dominika Kubová
@@ -52,8 +54,9 @@ def text_preview():
 #User chooses which text is analyzed.
 def text_choise():
     chosen_number_of_text =  input("Choose the number of text you want to analyze.")
-    if not chosen_number_of_text.isdecimal() or not int(chosen_number_of_text) in range(len(TEXTS)):
-        print("There is no text avaliable with number", chosen_number_of_text, "or you did not enter a number")
+    if not chosen_number_of_text.isdecimal() or not int(chosen_number_of_text) in range(1,(len(TEXTS) + 1)):
+        print("There is no text avaliable with number", chosen_number_of_text, "or you did not enter a number. I am closing the program!")
+        sys.exit()
     else:
         print("Let's analyze text number", chosen_number_of_text)
         analyzed_text_index = int(chosen_number_of_text) - 1
